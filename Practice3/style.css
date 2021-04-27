@@ -1,0 +1,178 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden; 
+    bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex: 1;
+}
+
+#right {
+    flex: 1;
+}
+
+#signin .primary-btn {
+    display: inline-block;
+    margin-left: 16px;
+    padding: 10px 30px;
+    width: 100%;
+    color: black;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 0.7;
+}
+.primary-btn:hover {
+    background-color: white;
+    box-shadow: inset;
+    transform: scale(0.95);
+}
+
+#signin .secondary-btn {
+    margin-bottom: 50px;
+}
+
+.secondary-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.secondary-btn:hover {
+    background-color: #f96816;
+    transform: scale(0.95);
+}
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#signin form {
+    padding: 20px;
+}
+
+#signin .logo {
+    margin: 8vh;
+}
+
+#signin .logo img {
+    width: 300px;
+    margin: 0 0 5px 5px;
+}
+
+#signin form label {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+#signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+#signin .or, .links {
+    width: 60%
+}
+
+#signin .links{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://image.ibb.co/cO9Lxq/login-bg.jpg") 
+    no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 3rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    background: #f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#showcase .secondary-btn {
+    background-color: gray;
+    color: white;
+    width: 50%
+}
+
+#showcase .secondary-btn:hover {
+    background-color: lightgray;
+    transform: scale(0.95);
+}
