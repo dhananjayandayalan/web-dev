@@ -105,9 +105,9 @@ a.flipkart-plus span {
     background-color: #ffffff;
     display: inline-block;
     border-radius: 2px 0 0 2px;
-    padding: 0 16px;
-    width: 522px;
-    height: 36px;
+    padding: 0 1rem;
+    width: 32.625rem;
+    height: 2.25rem;
     border: none;
 }
 
@@ -122,8 +122,8 @@ a.flipkart-plus span {
     justify-content: flex-end;
     padding: 4px 12px 0px 8px;
     text-align: center;
-    width: 42px;
-    height: 36px;
+    width: 2.625rem;
+    height: 2.25rem;
     margin-left: -1.5px;
 }
 
@@ -137,56 +137,102 @@ a.flipkart-plus span {
 .dropbtn {
     background-color: #2874f0;
     color: white;
-    padding: 16px;
+    padding: 1rem;
     font-size: 16px;
     border: none;
     width: fit-content;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     margin-top: 5px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 10rem;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-      align-items: center;
-      background-color: #fafafa;
-      border-color: #f1f1f1;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #2874f0;}
+}
 
-  .cart {
-      align-items: center;
-      border-color: #ffffff;
-      color: #ffffff;
-      display: flex;
-      margin-top: -3px;
-      margin-left: 9px;
-  }
-  
-  
+/* Links inside the dropdown */
+.dropdown-content a {
+    align-items: center;
+    background-color: #fafafa;
+    border-color: #f1f1f1;
+    color: black;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #2874f0;
+}
+
+.cart {
+    align-items: center;
+    border-color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    margin-top: -3px;
+    margin-left: 9px;
+}
+
+.login {
+    color: #212121;
+    margin: 0 auto;
+    border-radius: 2px;
+    height: 33rem;
+    max-width: 2.9296875rem;
+    max-height: 40.625;
+    margin: 16px auto 0;
+    width: 52.5rem;
+    min-height: 21.875rem;
+    position: relative;
+    max-width: inherit;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.login .left {
+    background-image: url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png);
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    background-color: #2874f0;
+    color: #fff;
+    padding: 2.5rem 2.0625rem;
+    font-size: 15px;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+p.get-left {
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 150%;
+    color: #dbdbdb;
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
