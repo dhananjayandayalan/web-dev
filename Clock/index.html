@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--import font-->
-    <title>Clock Live</title>
+    <title>Dynamic Clock</title>
     <style>
         * {
             margin: auto;
@@ -48,10 +47,18 @@
             if (hr == 0) {
                 res = res + "12 : ";
             } else if (hr > 0 && hr <= 12) {
-                res = res + hr + " : ";
+                if(hr > 0 && hr < 10) {
+                    res = res + '0' + hr + " : ";
+                } else {
+                    res = res + hr + " : ";
+                }
             } else {
                 var x = hr - 12;
-                res = res + x + " : ";
+                if(x > 0 && x < 10) {
+                    res = res + '0' + x + " : ";
+                } else {
+                    res = res + x + " : ";
+                }
             }
             // min 
             if (min < 10) {
