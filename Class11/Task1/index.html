@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Static Template</title>
   <link href="style.css" rel="stylesheet" />
+  
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
           <ul>
             <li>Day 09 Daily CSS Image</li>
           </ul>
-          <div class="posts">See post events</div>
+          <div class="posts" onclick={showpost()}>See post events</div>
         </div>
         <!--current-events -->
 
@@ -152,6 +154,46 @@
   </div>
   <!-- container -->
   <script src="script.js"></script>
+  <!-- <script>
+    var eventList = document.querySelector('.current-events ul');
+
+    const events = [{
+      title: 'Understanding DOM',
+      dateTime: '14-05-2021',
+    }, {
+      title: "Calendar Implementation Using DOM",
+      dateTime: '10-05-2021'
+    }];
+
+    eventList.innerHTML = ``;
+
+    events.forEach((item, i) => {
+      const liEl = document.createElement('li');
+      liEl.innerText = item.title;
+      eventList.appendChild(liEl);
+    });
+
+    var eventEl = document.querySelector('.current-events ul');
+    eventEl.style.height = '20px';
+    eventEl.style.overflow = 'hidden';
+
+    function showpost() {
+      // console.log(eventEl.style.height);
+      const postEl = document.querySelector('.posts');
+      postEl.classList.add('hide');
+      eventEl.style.height = 'auto';
+    }
+
+    const addEventEl = document.querySelector('.add-event');
+    addEventEl.addEventListener('click', () => {
+      const viewEl = document.querySelector('.calendar-left-view');
+      const createEl = document.querySelector('.calendar-event-create');
+      // console.log(viewEl, createEl);
+      viewEl.classList.add('hide');
+      createEl.classList.remove('hide');
+    });
+    </script> -->
+
 </body>
 
 </html>
