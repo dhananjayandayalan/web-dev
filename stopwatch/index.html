@@ -115,7 +115,7 @@
     <footer>
         Stopwatch By <a href="https://www.linkedin.com/in/dhananjayandayalan" target="_blank" style="background-color: darkgray;">Dhananjayan Dayalan</a>
     </footer>
-    
+
     <script>
         // Assigning the Values to variable - Step 1 
         var startBtn = document.querySelector('.start');
@@ -173,23 +173,20 @@
             timer = setInterval(showTime, 1000);
             startBtn.disabled = true;
             stopBtn.disabled = false;
-            resetBtn.disabled = false;
         }
 
         function stopfn() {
             clearInterval(timer);
             startBtn.disabled = false;
             stopBtn.disabled = true;
-            resetBtn.disabled = false;
         }
 
         function resetfn() {
             clearInterval(timer);
             secondCount = 0;
-            showTime();
+            timerEl.innerHTML = "00 : 00 : 00";
             startBtn.disabled = false;
             stopBtn.disabled = false;
-            resetBtn.disabled = true;
         }
     </script>
 
