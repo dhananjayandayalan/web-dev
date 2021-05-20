@@ -27,12 +27,21 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#play {
+#play, #pause{
   font-size: large;
+  font-weight: 600;
 }
 
-:hover#play {
+:hover#play, :hover#pause{
   cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 650px;
+  margin-right: 650px;
 }
 
 #percent {
@@ -41,3 +50,4 @@ body {
 
 /* rgb(124, 163, 66) */
 /* #ff8a65 */
+

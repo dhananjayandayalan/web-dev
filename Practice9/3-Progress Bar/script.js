@@ -7,14 +7,23 @@ const bg = function (color) {
 };
 
 document.getElementById("play").addEventListener("click", function () {
-    intervalBar = setInterval(bar, 50);
-    width = 0;
+    if(width == 100) {
+        width = 0;
+    }
+    intervalBar = setInterval(bar, 30);
+    // width = 0;
     bg("violet");
+});
+
+document.getElementById("pause").addEventListener("click", () => {
+    bg("red");
+    clearInterval(intervalBar);
 });
 
 function bar() {
     if (width == 100) {
         clearInterval(intervalBar);
+        // width = 0;
     } else {
         width++;
         element.style.width = width + "%";
@@ -32,6 +41,6 @@ function bar() {
     } else if (width == 78) {
         bg("orange");
     } else if (width == 90) {
-        bg("red");
+        bg("pink");
     }
 }
