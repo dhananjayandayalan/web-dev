@@ -69,7 +69,7 @@ function resetfn() {
     secondCount = 0;
     showTime();
     startBtn.disabled = false;
-    stopBtn.disabled = false;
+    stopBtn.disabled = true;
     resetBtn.disabled = true;
 }
 
