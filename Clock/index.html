@@ -36,8 +36,8 @@
             var hr = t.getHours();
             var min = t.getMinutes();
             var sec = t.getSeconds();
-            document.getElementById('ShowDate').innerHTML = " " + date + " - " + month + " - " + year;
-            document.getElementById('ShowTime').innerHTML = getTime(hr, min, sec);
+            document.getElementById('ShowDate').innerHTML = new Date().toLocaleDateString();
+            document.getElementById('ShowTime').innerHTML = new Date().toLocaleTimeString();
             setTimeout(currentTime, 1000);
         }
 
